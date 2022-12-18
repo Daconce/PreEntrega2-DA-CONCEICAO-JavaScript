@@ -39,12 +39,14 @@ for (var i = 0; i < cantidad; i++) {
 }
 
 // Calculamos el precio total de las empanadas
-var precioTotal = cantidad * 250;
+function preciototal(cantidad) {
+  return cantidad * 250;
+}
 
 // Mostramos un resumen del pedido y el precio total
 var resumen = "Resumen del pedido:\n";
 for (var i = 0; i < gustos.length; i++) {
   resumen += "- Empanada de " + gustos[i] + "\n";
 }
-resumen += "Precio total: $" + precioTotal;
+resumen += "Precio total: $" + preciototal(cantidad);
 alert(resumen);
